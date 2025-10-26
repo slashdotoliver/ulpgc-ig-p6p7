@@ -1,0 +1,136 @@
+{
+  "sistema": {
+    "estrella": {
+      "nombre": "Nil",
+      "color": "#c3a50c",
+      "tipo": "Estrella de tipo G",
+      "subtipo": "T0 V",
+      "gravedad": "274 m/s²",
+      "temperaturaSuperficial": "5,500°C",
+      "descripción": "La estrella Nil es una estrella de tipo G similar al Sol, pero ligeramente más caliente y brillante. Se formó hace unos 4.6 mil millones de años a partir de una nube de gas y polvo intergaláctico, probablemente originada por una supernova. Su energía sustenta todo el sistema, y se estima que aún tiene unos 3 mil millones de años antes de entrar en su fase de gigante roja.",
+      "radiación": "Moderada",
+      "luminosidad": "1.25 L☉",
+      "edad": "4.6 mil millones de años",
+      "distancia": "0 AU"
+    },
+    "planetas": [
+      {
+        "nombre": "Meruta",
+        "color": "#718a21",
+        "tipo": "Planeta Terrestre",
+        "composicion": "Corteza de silicato, núcleo metálico",
+        "atmósfera": "Ninguna (perdida debido a la cercanía con Nil)",
+        "gravedad": "6.3 m/s²",
+        "temperaturaSuperficial": "750°C",
+        "descripción": "Meruta es el planeta más cercano a Nil. Debido a su proximidad extrema a la estrella, ha perdido toda su atmósfera y su superficie es un vasto campo de cañones volcánicos y llanuras de roca expuesta. Su temperatura superficial es extremadamente alta, y su terreno se caracteriza por grandes cañones erosionados por intensas tormentas solares.",
+        "característicasSuperficiales": ["Llanuras volcánicas", "Cañones gigantes", "Acantilados erosionados"],
+        "órbita": {
+          "distanciaDesdeLaEstrella": "0.04 AU",
+          "periodoOrbital": "14 días",
+          "periodoDeRotación": "30 horas"
+        }
+      },
+      {
+        "nombre": "Vandenia",
+        "color": "#6343b8",
+        "tipo": "Planeta Terrestre",
+        "composicion": "Corteza de silicato, núcleo volcánico, manto de hierro",
+        "atmósfera": "Densa, tóxica con nubes de azufre",
+        "gravedad": "9.8 m/s²",
+        "temperaturaSuperficial": "500°C",
+        "descripción": "Vandenia es un planeta terrestre, con una atmósfera extremadamente densa compuesta principalmente de dióxido de azufre y gases venenosos. La superficie está cubierta por mares de ácido, grandes formaciones montañosas y volcanes activos. La temperatura es extremadamente alta debido a su atmósfera espesa y la proximidad a Nil.",
+        "característicasSuperficiales": ["Mares ácidos", "Montañas volcánicas", "Nubes tóxicas"],
+        "órbita": {
+          "distanciaDesdeLaEstrella": "0.12 AU",
+          "periodoOrbital": "32 días",
+          "periodoDeRotación": "34 horas"
+        },
+        "detallesDeLaAtmósfera": {
+          "composición": ["SO2", "H2O", "HCl"],
+          "densidad": "Muy densa",
+          "clima": "Tormentas constantes de azufre"
+        }
+      },
+      {
+        "nombre": "Ephichi",
+        "color": "#327f6e",
+        "tipo": "Planeta Terrestre",
+        "composicion": "Corteza de granito, núcleo de hierro",
+        "atmósfera": "Extremadamente densa, rica en azufre",
+        "gravedad": "8.5 m/s²",
+        "temperaturaSuperficial": "350°C",
+        "descripción": "Ephichi es un planeta rocoso de gran tamaño con una atmósfera densa y cargada de dióxido de azufre, nitrógeno y otros gases pesados. No tiene agua, y la superficie está dominada por cadenas montañosas y valles erosionados. Las nubes grises y densas ocultan casi todo lo que hay en la superficie, haciendo que las condiciones sean extremadamente inhóspitas para la vida.",
+        "característicasSuperficiales": ["Cadenas montañosas", "Llanuras vastas", "Cielos cubiertos de nubes"],
+        "órbita": {
+          "distanciaDesdeLaEstrella": "0.25 AU",
+          "periodoOrbital": "60 días",
+          "periodoDeRotación": "28 horas"
+        },
+        "detallesDeLaAtmósfera": {
+          "composición": ["SO2", "N2", "CO2"],
+          "densidad": "Extremadamente densa",
+          "clima": "Nubes con tormentas constantes"
+        }
+      },
+      {
+        "nombre": "Votustea",
+        "color": "#9d4748",
+        "tipo": "Planeta Rocoso en Formación",
+        "composicion": "Lagos de lava, corteza no formada",
+        "atmósfera": "Nubes de ceniza y humo",
+        "gravedad": "7.5 m/s²",
+        "temperaturaSuperficial": "1000°C",
+        "descripción": "Votustea es un planeta rocoso aún en formación, con gran actividad volcánica visible desde el espacio. Su superficie está cubierta por enormes lagos de lava y porosos campos volcánicos, y su atmósfera está dominada por densas nubes de ceniza y gases tóxicos. El planeta está en una fase de formación y se estima que pasará varios millones de años más antes de ser completamente estable.",
+        "característicasSuperficiales": ["Lagos de lava", "Volcanes activos", "Llanuras volcánicas"],
+        "órbita": {
+          "distanciaDesdeLaEstrella": "0.5 AU",
+          "periodoOrbital": "105 días",
+          "periodoDeRotación": "45 horas"
+        },
+        "tiempoDeFormación": "10 millones de años (estimado)"
+      },
+      {
+        "nombre": "Deanov",
+        "color": "#4e3f33",
+        "tipo": "Planeta Gigante Gaseoso",
+        "composicion": "Hidrógeno, helio, amoníaco",
+        "atmósfera": "Nubes densas de gas, anillos débiles",
+        "gravedad": "24.79 m/s²",
+        "temperaturaSuperficial": "-150°C",
+        "descripción": "Deanov es un gigantesco planeta gaseoso, con una atmósfera densa compuesta principalmente de hidrógeno y helio. Su núcleo es posiblemente un gigante líquido, mientras que su atmósfera está llena de tormentas intensas. Deanov tiene anillos débiles formados por partículas de hielo y polvo que hacen que sea un espectáculo visual impresionante desde el espacio.",
+        "característicasSuperficiales": ["Nubes de gas", "Tormentas masivas", "Anillos débiles de hielo"],
+        "órbita": {
+          "distanciaDesdeLaEstrella": "5.2 AU",
+          "periodoOrbital": "4320 días",
+          "periodoDeRotación": "9 horas"
+        },
+        "anillos": {
+          "cantidad": 3,
+          "composición": ["Hielo", "Rocas", "Polvo"]
+        }
+      },
+      {
+        "nombre": "Kepro",
+        "color": "#576864",
+        "tipo": "Luna Rocosa",
+        "composición": "Corteza de basalto, núcleo de hierro",
+        "atmósfera": "Prácticamente inexistente, vestigios de gas volcánico",
+        "gravedad": "2.3 m/s²",
+        "temperaturaSuperficial": "50°C",
+        "descripción": "Kepro es la luna rocosa que orbita el planeta Ephichi. Con una atmósfera casi nula, su superficie está dominada por vastos mares de lava solidificada y enormes montañas de basalto formadas por la actividad volcánica interna. La falta de atmósfera impide la retención de calor, lo que da lugar a temperaturas superficiales moderadas a pesar de su proximidad a Ephichi. A menudo, la superficie de Kepro está iluminada por destellos de erupciones volcánicas, creando un espectáculo dramático en su cielos oscuros.",
+        "característicasSuperficiales": ["Lagos de lava solidificada", "Montañas de basalto", "Superficie desgarrada por erupciones"],
+        "órbita": {
+          "distanciaDesdeElPlaneta": "0.08 AU",
+          "periodoOrbital": "18 días",
+          "periodoDeRotación": "12 días"
+        },
+        "detallesDeLaAtmósfera": {
+          "composición": ["SO2", "CO2", "Vapor de agua"],
+          "densidad": "Casi inexistente",
+          "clima": "Tormentas de polvo esporádicas"
+        }
+      }
+
+    ]
+  }
+}

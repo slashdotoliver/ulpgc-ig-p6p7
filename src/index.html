@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Práctica S6 IG | Creador de Sistemas Solares</title>
+    <meta charset="UTF-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="left-info-panel"></div>
+<div id="right-info-panel">
+    <div class="right-container">
+        <div class="right-info">
+            <p class="panel-title">Controles</p>
+            <div class="buttons">
+                <button id="orbit-camera-button">Navegación Orbital</button>
+                <button id="free-camera-button">Navegación con Nave</button>
+            </div>
+        </div>
+        <div id="orbit-controls-info" class="controls-info">
+            <strong>🖱️ Clic izquierdo</strong>
+            <p>Cambiar de planeta</p>
+            <strong>🖱️ Mantener clic izquierdo</strong>
+            <p>Mover la cámara</p>
+            <strong>🔄 Rueda del ratón</strong>
+            <p>Controlar el zoom</p>
+        </div>
+        <div id="free-controls-info" class="controls-info inactive">
+            <strong>🖱️ Clic izquierdo</strong>
+            <p>Cambiar de descripción de planeta</p>
+            <strong>🖱️ Mantener clic izquierdo</strong>
+            <p>Mover la cámara</p>
+            <strong>⬆️⬅️⬇️➡️ y WASD</strong>
+            <p>Desplazarse</p>
+            <strong>⤵️ Shift</strong>
+            <p>Bajar</p>
+            <strong>↔️ Barra espaciadora</strong>
+            <p>Subir</p>
+        </div>
+        <div class="bottom-container">
+            <p><strong>Explorador del Sistema Nil</strong></p>
+            <p><strong>Informática Gráfica</strong>, Prácticas 6 y 7</p>
+            <p>Autor: Oliver Cabrera Volo</p>
+        </div>
+    </div>
+</div>
+<script type="module" src="index.js"></script>
+<!--canvas class="renderer" data-engine="three.js r152"-->
+</body>
+</html>
