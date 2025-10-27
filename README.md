@@ -73,7 +73,7 @@ La luna Kepro se modeló con un conjunto de mapas similar al de los planetas; ad
 
 ![Votustea](images/votustea.png)
 
-Votustea se creó reutilizando la técnica aplicada en Vandenia, con capas de atmósfera y varias capas de nubes para aumentar la sensación de dinámica atmosférica. Se incorporó asimismo un mapa de emisión para representar puntos iluminados en las sombras, similar al tratamiento aplicado en Kepro.
+Votustea se creó reutilizando la técnica aplicada en Vandenia, con capas de atmósfera y varias capas de nubes para aumentar la sensación de dinámica atmosférica. Se añadió un mapa de emisión para representar puntos iluminados en las sombras, similar al tratamiento aplicado en Kepro.
 
 > "Votustea es un planeta rocoso aún en formación, con gran actividad volcánica visible desde el espacio. Su superficie está cubierta por enormes lagos de lava y porosos campos volcánicos, y su atmósfera está dominada por densas nubes de ceniza y gases tóxicos. El planeta está en una fase de formación y se estima que pasará varios millones de años más antes de ser completamente estable."
 
@@ -81,7 +81,7 @@ Votustea se creó reutilizando la técnica aplicada en Vandenia, con capas de at
 
 ![Deanov](images/deanov_eclipse.png)
 
-Para representar los anillos de Deanov se empleó `RingGeometry`[^8] y una textura derivada de nubes/gas que se aplica tanto a los anillos como a la superficie del planeta. Adicionalmente se superpusieron tres capas de nubes para acentuar el movimiento aparente en la atmósfera.
+Para representar los anillos de Deanov se empleó `RingGeometry`[^8] y una textura de anillos. Con otra textura de nubes de la superficie se aplica la textura del planeta[^11]. Adicionalmente se superpusieron tres capas de nubes para acentuar el movimiento aparente en la atmósfera.
 
 > "Deanov es un gigantesco planeta gaseoso, con una atmósfera densa compuesta principalmente de hidrógeno y helio. Su núcleo es posiblemente un gigante líquido, mientras que su atmósfera está llena de tormentas intensas. Deanov tiene anillos débiles formados por partículas de hielo y polvo que hacen que sea un espectáculo visual impresionante desde el espacio."
 
