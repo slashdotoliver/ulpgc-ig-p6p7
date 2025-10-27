@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=peBgobZY-z8"></a>
-  <img src="images/preview.mp4" alt="Ver vídeo en YouTube" width="480">
+  <img src="images/preview.gif" alt="Ver vídeo en YouTube" width="480">
 </p>
 
 ## Resumen del proyecto
@@ -96,7 +96,7 @@ Los objetos del sistema se ubican mayoritariamente sobre un mismo plano orbital 
 
 La interfaz presenta dos paneles principales:
 
-* **Panel izquierdo:** muestra información detallada del astro señalado por el cursor (nombre, parámetros orbitales, propiedades físicas y materiales).
+* **Panel izquierdo:** muestra información detallada del astro señalado por el cursor (nombre, parámetros orbitales, propiedades físicas).
 * **Panel derecho:** permite alternar entre dos modos de control:
 
   1. **Control orbital:** cámara y controles centrados en órbitas alrededor del astro seleccionado.
