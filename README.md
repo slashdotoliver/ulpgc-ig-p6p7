@@ -12,6 +12,10 @@ El **Explorador del Sistema Nil** consiste en una simulación interactiva de un 
   <a href="https://www.youtube.com/watch?v=peBgobZY-z8"><img src="images/preview.gif" alt="Ver vídeo en YouTube" width="512"></a>
 </p>
 
+<p align="center">
+  <a align="center" href="https://www.youtube.com/watch?v=peBgobZY-z8">Ver en YouTube</a>
+</p>
+
 ## Desarrollo
 
 Las texturas de color de los planetas se generaron inicialmente mediante un **generador procedimental de planetas**[^1]. A partir de estas texturas base se obtuvieron los mapas adicionales necesarios para el material -mapa normal, mapa de desplazamiento, mapa de oclusión ambiental y mapa especular- utilizando una herramienta para generar mapas normales y derivados[^2].
