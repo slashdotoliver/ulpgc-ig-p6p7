@@ -4,13 +4,13 @@
   <img src="images/nil_star_system.png" alt="Banner del proyecto" width="800">
 </p>
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=peBgobZY-z8"><img src="images/preview.gif" alt="Ver vídeo en YouTube" width="480"></a>
-</p>
-
 ## Resumen del proyecto
 
 El **Explorador del Sistema Nil** consiste en una simulación interactiva de un sistema planetario ficticio denominado **Nil**. Permite visualizar cuerpos celestes, sus órbitas y la representación de materiales y atmósferas mediante mapas de textura implementada con Three.js.
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=peBgobZY-z8"><img src="images/preview.gif" alt="Ver vídeo en YouTube" width="480"></a>
+</p>
 
 ## Desarrollo
 
