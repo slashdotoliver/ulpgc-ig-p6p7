@@ -87,7 +87,20 @@ Para representar los anillos de Deanov se empleó `RingGeometry`[^8] y una textu
 
 ## Configuración orbital y dinámica
 
-Los objetos del sistema se ubican mayoritariamente sobre un mismo plano orbital para favorecer la aparición de eclipses y fenómenos de ocultación. Algunas órbitas fueron definidas con sentido **prógrado** y otras con sentido **retrógrado**[^13]. Las trayectorias y velocidades angulares se parametrizan en el motor de simulación para controlar estabilidad y frecuencia de interacciones.
+Los objetos del sistema se ubican mayoritariamente sobre un mismo plano orbital para favorecer la aparición de eclipses y fenómenos de ocultación. Algunas órbitas fueron definidas con sentido **prógrado** y otras con sentido **retrógrado**[^13]. Las velocidades angulares para órbitas circulares se obtienen a partir de la tercera ley de Kepler, en función del radio orbital de cada planeta, aplicando la relación:
+
+```math
+  \omega = \sqrt{\frac{G M}{r^3}}
+```
+
+Donde:
+
+* ($G$) es la **constante de gravitación universal**,
+* ($M$) es la **masa de la estrella central**,
+* ($r$) es el **radio de la órbita del planeta**.
+* ($\omega$) es la **velocidad angular del planeta**.
+
+En el código se incluye la constante $GM$, resultado de encontrar un valor correcto que encajara en la simulación.
 
 ## Interfaz de usuario
 
