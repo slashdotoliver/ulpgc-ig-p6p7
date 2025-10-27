@@ -92,6 +92,8 @@ Los objetos del sistema se ubican mayoritariamente sobre un mismo plano orbital 
 
 ## Interfaz de usuario
 
+![Interfaz](images/ui.png)
+
 La interfaz presenta dos paneles principales:
 
 * **Panel izquierdo:** muestra información detallada del astro señalado por el cursor (nombre, parámetros orbitales, propiedades físicas y materiales).
@@ -108,7 +110,7 @@ La primera implementación para la nave fue un modelo `gltf` importado; debido a
 
 Se utilizó IA generativa para tareas puntuales:
 
-* Generación de descripciones narrativas de los planetas.
+* Generación de las descripciones narrativas de los planetas y del resto de propiedades.
 * Obtención de ejemplos y fragmentos de código para resolver problemas concretos con Three.js.
 * Corrección y formalización del texto del README.
 
