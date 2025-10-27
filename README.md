@@ -113,6 +113,16 @@ Se utilizó IA generativa para tareas puntuales:
 * Obtención de ejemplos y fragmentos de código para resolver problemas concretos con Three.js.
 * Corrección y formalización del texto del README.
 
+---
+
+Autor: Oliver Cabrera Volo
+
+El contenido del repositorio (código y recursos propios) puede incluir archivos con licencias externas. Se recomienda revisar las licencias de cada recurso listado en la sección de referencias antes de reutilizarlos en proyectos derivados.
+
+Bajo licencia de Creative Commons Reconocimiento - No Comercial 4.0 Internacional
+
+---
+
 ## Recursos y referencias
 
 Las siguientes referencias incluyen las herramientas, generadores y documentación consultada o citada en el proyecto.
@@ -142,9 +152,3 @@ Las siguientes referencias incluyen las herramientas, generadores y documentaci�
 [^12]: `BoxGeometry` (Three.js docs) - [https://threejs.org/docs/?q=Box#api/en/geometries/BoxGeometry](https://threejs.org/docs/?q=Box#api/en/geometries/BoxGeometry)
 
 [^13]: Movimientos retrógrado y prógrado - Wikipedia -[https://es.wikipedia.org/wiki/Movimientos_retr%C3%B3grado_y_pr%C3%B3grado](https://es.wikipedia.org/wiki/Movimientos_retr%C3%B3grado_y_pr%C3%B3grado)
-
----
-
-Autor: Oliver Cabrera Volo
-
-El contenido del repositorio (código y recursos propios) puede incluir archivos con licencias externas; se recomienda revisar las licencias de cada recurso listado en la sección de referencias antes de reutilizarlos en proyectos derivados.
