@@ -5,8 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=peBgobZY-z8"></a>
-  <img src="images/preview.gif" alt="Ver vídeo en YouTube" width="480">
+  <a href="https://www.youtube.com/watch?v=peBgobZY-z8"><img src="images/preview.gif" alt="Ver vídeo en YouTube" width="480"></a>
 </p>
 
 ## Resumen del proyecto
