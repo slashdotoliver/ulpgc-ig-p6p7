@@ -4,9 +4,9 @@
   <img src="images/nil_star_system.png" alt="Banner del proyecto" width="800">
 </p>
 
-## Resumen del proyecto
+## Introducción
 
-El **Explorador del Sistema Nil** consiste en una simulación interactiva de un sistema planetario ficticio denominado **Nil**. Permite visualizar cuerpos celestes, sus órbitas y la representación de materiales y atmósferas mediante mapas de textura implementada con Three.js.
+Las prácticas 6 y 7 han permitido crear un sistema planetario ficticio denominado **Nil**, compuesto por 5 planetas y una luna. La simulación con [Three.js](https://threejs.org) permite visualizar los cuerpos celestes, sus órbitas y la representación de superficies y atmósferas mediante mapas de textura generados de manera procedimental.
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=peBgobZY-z8"><img src="images/preview.gif" alt="Ver vídeo en YouTube" width="512"></a>
@@ -24,8 +24,10 @@ Los materiales de superficie se implementaron con un modelo PBR estándar (`Mesh
 
 1. Generación de la textura de color (base)[^1].
 2. Creación del resto de texturas (normal, desplazamiento, oclusión, especular) a partir de la textura base[^2].
-3. Configuración del material PBR y ajuste de parámetros (roughness, metalness, displacementScale).
+3. Configuración del material PBR y ajuste de parámetros (roughness, metalness, displacementScale, ...).
 4. Integración en la escena y ajuste de la iluminación y sombras.
+
+La textura del cielo se obtuvo a partir del generador **space-3d**[^14] y se asignó a `scene.background` una textura de tipo `CubeTexture`[^15].
 
 El código fuente y ejemplos interactivos pueden consultarse en el [**Repositorio de CodeSandbox**](https://codesandbox.io/p/sandbox/jfjt4p)[^5].
 
@@ -91,7 +93,7 @@ Para representar los anillos de Deanov se empleó `RingGeometry`[^8] y una textu
 
 ## Configuración orbital y dinámica
 
-Los objetos del sistema se ubican mayoritariamente sobre un mismo plano orbital para favorecer la aparición de eclipses y fenómenos de ocultación. Algunas órbitas fueron definidas con sentido **prógrado** y otras con sentido **retrógrado**[^13]. Las velocidades angulares para órbitas circulares se obtienen a partir de la tercera ley de Kepler, en función del radio orbital de cada planeta, aplicando la relación:
+Los objetos del sistema se ubican sobre un mismo plano orbital para favorecer la aparición de eclipses y fenómenos de ocultación. Algunas órbitas fueron definidas con sentido **prógrado** y otras con sentido **retrógrado**[^13]. Las velocidades angulares para órbitas circulares se obtienen a partir de la tercera ley de Kepler, en función del radio orbital de cada planeta, aplicando la relación:
 
 ```math
   \omega = \sqrt{\frac{G M}{r^3}}
@@ -104,7 +106,7 @@ Donde:
 * ($r$) es el **radio de la órbita del planeta**.
 * ($\omega$) es la **velocidad angular del planeta**.
 
-En el código se incluye la constante $GM$, resultado de encontrar un valor correcto que encajara en la simulación.
+En el código se incluye la constante $GM$ (`const GM = 5E9;`), resultado de encontrar un valor correcto que encajara en la simulación.
 
 ## Interfaz de usuario
 
@@ -117,6 +119,8 @@ La interfaz presenta dos paneles principales:
 
   1. **Control orbital:** cámara y controles centrados en órbitas alrededor del astro seleccionado.
   2. **Control libre (tercera persona):** control de una nave que permite desplazamiento libre por la escena.
+
+Los controles se implementaron sin usar los controles ya existentes de Threejs ya que no se adaptaron bien al cambio constante de posición del objetivo sobre el que tienen que orbitar. El código de los controles se encuentra en las clases [`OrbitalCameraControls`](/src/OrbitalCameraControls.js) y [`FreeCameraControls.js`](/src/FreeCameraControls.js).
 
 La primera implementación para la nave fue un modelo `gltf` importado; debido a problemas con las texturas se decidió realizar el modelado a partir de cubos o `BoxGeometry`[^12].
 
@@ -137,8 +141,6 @@ Autor: Oliver Cabrera Volo
 El contenido del repositorio (código y recursos propios) puede incluir archivos con licencias externas. Se recomienda revisar las licencias de cada recurso listado en la sección de referencias antes de reutilizarlos en proyectos derivados.
 
 Bajo licencia de Creative Commons Reconocimiento - No Comercial 4.0 Internacional
-
----
 
 ## Recursos y referencias
 
@@ -166,6 +168,10 @@ Las siguientes referencias incluyen las herramientas, generadores y documentaci�
 
 [^11]: Textura de nubes/gas usada en anillos y superficie de Deanov - [https://ar.inspiredpencil.com/pictures-2023/gas-giant-texture](https://ar.inspiredpencil.com/pictures-2023/gas-giant-texture)
 
-[^12]: `BoxGeometry` (Three.js docs) - [https://threejs.org/docs/?q=Box#api/en/geometries/BoxGeometry](https://threejs.org/docs/?q=Box#api/en/geometries/BoxGeometry)
+[^12]: `BoxGeometry` (Three.js docs) - [https://threejs.org/docs/#api/en/geometries/BoxGeometry](https://threejs.org/docs/#api/en/geometries/BoxGeometry)
 
-[^13]: Movimientos retrógrado y prógrado - Wikipedia -[https://es.wikipedia.org/wiki/Movimientos_retr%C3%B3grado_y_pr%C3%B3grado](https://es.wikipedia.org/wiki/Movimientos_retr%C3%B3grado_y_pr%C3%B3grado)
+[^13]: Movimientos retrógrado y prógrado - [https://es.wikipedia.org/wiki/Movimientos_retr%C3%B3grado_y_pr%C3%B3grado](https://es.wikipedia.org/wiki/Movimientos_retr%C3%B3grado_y_pr%C3%B3grado)
+
+[^14]: Generador de texturas de cielo - [https://github.com/wwwtyro/space-3d](https://github.com/wwwtyro/space-3d)
+
+[^15]: `CubeTexture` (Three.js docs) - [threejs.org/docs/#api/en/textures/CubeTexture](threejs.org/docs/#api/en/textures/CubeTexture)
